@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body class="body">
+
+    <!-- audio sources -->
+
+    <audio id="myAudio01">
+        <source src="sounds/correct.wav" type="audio/wav">
+    </audio>
+
+    <audio id="myAudio02">
+        <source src="sounds/wrong.wav" type="audio/wav">
+    </audio>
+
+
+    <!-- containers -->
+
+    <div class="parent">
+
+        <div class="form">
+
+
+            <!-- name of the test -->
+
+            <div id="testTitle" class="testTitle">
+                <h1>World Countries test, can you name all the countries?</h1>
+            </div>
+
+            <!-- image which corresponds to question -->
+
+            <img class="image" id="svg" src=''>
+
+            <!-- the current question -->
+
+            <h1 class="question-no" id="question-list"></h1>
+
+            <!-- answers -->
+
+            <label class="choose" class="question"> <input name="choose" class="checkbox" type="radio" id="option0"
+                    value="0">
+                <p class="otext0" id="otext0"></p>
+            </label>
+
+            <label name="choose" class="question"> <input name="choose" class="checkbox" type="radio" id="option1"
+                    value="1">
+                <p class="otext1" id="otext1"></p>
+            </label>
+
+            <label name="choose" class="question"> <input name="choose" class="checkbox" type="radio" id="option2"
+                    value="2">
+                <p class="otext2" id="otext2"></p>
+            </label>
+
+            <label name="choose" class="question"> <input name="choose" class="checkbox" type="radio" id="option3"
+                    value="3">
+                <p class="otext3" id="otext3"></p>
+            </label>
+
+            <label name="choose" class="question"> <input name="choose" class="checkbox" type="radio" id="option4"
+                    value="4">
+                <p class="otext4" id="otext4"></p>
+            </label>
+
+            <!-- buttons -->
+
+            <button id="start-btn" class="start-btn" onClick="startTest()">start test</button>
+            <button id="check-answer" class="check-btn" onClick="check()">check answer</button>
+            <button id="next-question" class="check-btn" onClick="nextQuestion()">next question</button>
+            <button id="testend-btn" class="check-btn" onClick="testEnd()">finish the test!</button>
+            <button id="restart-test" class="check-btn" onClick="restartTest()">Take the test again!</button>
+
+            <!-- motivational emoji and result text -->
+
+            <h3 class="motivational-emoji" id="motivational-emoji"></h3>
+            <div class="container01">
+                <h2 class="result-text" id="result">result</h2>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html {
+    background-color: rgb(110, 166, 124);
+    font-family: monospace;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form {
+    margin-top: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image {
+    margin-top: 5px;
+    width: 250px;
+}
+
+.check-btn {
+    justify-content: center;
+    margin-top: 15x;
+    margin-bottom: 5px;
+}
+
+.start-btn {
+    justify-content: center;
+    display: inline-block;
+    position: relative;
+    top: 35vh;
+}
+
+.testTitle {
+    justify-content: center;
+    display: flex;
+    position: relative;
+    top: 35vh;
+}
+
+#check-answer {
+    display: none;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#next-question {
+    display: none;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#motivational-emoji {
+    display: none;
+    justify-content: center;
+}
+
+#testend-btn {
+    display: none;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+#restart-test {
+    display: none;
+}
